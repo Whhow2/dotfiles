@@ -18,7 +18,7 @@ set shiftwidth=4
 set expandtab
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'puremourning/vimspector'
+"Plug 'puremourning/vimspector'
 Plug 'jiangmiao/auto-pairs'
 Plug 'morhetz/gruvbox'
 Plug 'rakr/vim-one'
