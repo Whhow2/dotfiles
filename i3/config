@@ -226,6 +226,3 @@ exec --no-startup-id alacritty -T "Dev Terminal"
 for_window [class="(?i)alacritty" title="Dev Terminal"] move to workspace 2: Dev
 exec --no-startup-id vmplayer
 for_window [class="(?i)vmplayer"] move to workspace 3: vmware
-exec --no-startup-id 'i3-msg "[class=\\"(?i)obsidian\\"] focus"'
-exec --no-startup-id 'i3-msg "splitv"'
-exec --no-startup-id alacritty -T "General Terminal"
