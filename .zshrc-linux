@@ -1,3 +1,5 @@
+neofetch
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -6,10 +8,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/will/.oh-my-zsh"
+export ZSH="/home/will/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -113,17 +115,11 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-#pythonpath
-export PYTHONPATH=$(brew --prefix)/lib/python3.10/site-packages:$PYTHONPATH
-export PATH=$PATH:~/Library/Python/3.10/bin
-
-#virtualenvwrapper settings
+eval "$(pyenv init - )"
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-source /usr/local/bin/virtualenvwrapper.sh
-
+source /usr/bin/virtualenvwrapper.sh
+export PYENV_VIRTUALWRAPPER_PREFER_PYENV="true"
+export PYTHONPATH=/usr/bin/python3
 
 #default to neovim
 alias vim="nvim"
@@ -143,13 +139,24 @@ alias serve='browser-sync start --directory --server --files "*.js, *.html, *.cs
 alias viconf="vi ~/.config/nvim/init.vim"
 
 #open .zshrc config
-alias zshconf="vi ~/.zshrc && source ~/.zshrc"
+alias vizsh="vi ~/.zshrc && source ~/.zshrc"
 
 #source .zshrc config
 alias srczsh="source ~/.zshrc"
+
+#open alacritty.yml
+alias vialac="vi ~/.config/alacritty/alacritty.yml"
+
+#open i3 config
+alias vi3="vi ~/.config/i3/config"
+
+#open polybar
+alias vipbar="vi ~/.config/polybar/polybar"
 
 #fzf setup
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
   export FZF_DEFAULT_OPTS='-m --height 50% --border'
 fi
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+

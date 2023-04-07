@@ -25,6 +25,8 @@ Plug 'rakr/vim-one'
 Plug 'sainnhe/gruvbox-material'
 Plug 'owickstrom/vim-colors-paramount'
 Plug 'romgrk/github-light.vim'
+Plug 'xiyaowong/transparent.nvim'
+Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -111,10 +113,11 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 if (has("termguicolors"))
  set termguicolors
 endif
-set background=light
+set background=dark
 "colorscheme gruvbox-material
 let g:one_allow_italics = 1
-colorscheme paramount
+"colorscheme paramount
+colorscheme onedark
 
 "Nerdtree settings
 nnoremap <leader>n :NERDTreeFocus<CR>
