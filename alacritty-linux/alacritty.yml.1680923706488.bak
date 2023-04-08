@@ -62,7 +62,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.8
+  opacity: 0.85
 # Startup Mode (changes require restart)
 #
 # Values for `startup_mode`:
@@ -400,33 +400,33 @@ font:
   #- -c
   #- "tmux new-session -A -s main"
 colors:
-  name: Atelierforest (dark)
+  name: Atelierheath (dark)
   author: Chris Kempson
   primary:
-    background: "#1b1918"
-    foreground: "#a8a19f"
+    background: "#1b181b"
+    foreground: "#ab9bab"
   cursor:
-    text: "#1b1918"
-    cursor: "#a8a19f"
+    text: "#1b181b"
+    cursor: "#ab9bab"
   normal:
-    black: "#1b1918"
-    red: "#f22c40"
-    green: "#5ab738"
-    yellow: "#d5911a"
-    blue: "#407ee7"
-    magenta: "#6666ea"
-    cyan: "#00ad9c"
-    white: "#a8a19f"
+    black: "#1b181b"
+    red: "#ca402b"
+    green: "#379a37"
+    yellow: "#bb8a35"
+    blue: "#516aec"
+    magenta: "#7b59c0"
+    cyan: "#159393"
+    white: "#ab9bab"
   bright:
-    black: "#766e6b"
-    red: "#f22c40"
-    green: "#5ab738"
-    yellow: "#d5911a"
-    blue: "#407ee7"
-    magenta: "#6666ea"
-    cyan: "#00ad9c"
-    white: "#f1efee"
-theme: Atelierforest.dark
+    black: "#776977"
+    red: "#ca402b"
+    green: "#379a37"
+    yellow: "#bb8a35"
+    blue: "#516aec"
+    magenta: "#7b59c0"
+    cyan: "#159393"
+    white: "#f7f3f7"
+theme: Atelierheath.dark
 
 # Startup directory
 #
