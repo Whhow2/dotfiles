@@ -114,7 +114,7 @@ return packer.startup(function(use)
 	})
 
 	-- vimspector
-	use("puremourning/vimspector")
+--	use("puremourning/vimspector")
 
 	-- DAP debugging
 	--[[ use { ]]
