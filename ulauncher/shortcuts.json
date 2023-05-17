@@ -88,5 +88,15 @@
         "is_default_search": false,
         "run_without_argument": false,
         "added": 1683092593.4548957
+    },
+    "74a5d114-9bc0-4e01-ae9f-cf1c3660e2c6": {
+        "id": "74a5d114-9bc0-4e01-ae9f-cf1c3660e2c6",
+        "name": "jw.org Pictures",
+        "keyword": "jwp",
+        "cmd": "https://www.google.com/search?tbm=isch&q=site:jw.org+%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1684330379.8035321
     }
 }
