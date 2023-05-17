@@ -130,7 +130,8 @@ alias oldvim="\vim"
 export WX_CONFIG=/usr/local/x86_64/bin/wx-config
 
 #tmux
-alias start_tmux="tmux new-session -A -s main"
+alias gen_tmux="tmux new-session -A -s general"
+alias dev_tmux="tmux new-session -A -s dev"
 
 #browser-sync
 alias serve='browser-sync start --directory --server --files "*.js, *.html, *.css"'
@@ -151,7 +152,7 @@ alias vialac="vi ~/.config/alacritty/alacritty.yml"
 alias vi3="vi ~/.config/i3/config"
 
 #open polybar
-alias vipbar="vi ~/.config/polybar/polybar"
+alias vipbar="vi ~/.config/polybar/config.ini"
 
 #fzf setup
 if type rg &> /dev/null; then
