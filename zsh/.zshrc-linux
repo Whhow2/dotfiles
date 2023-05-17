@@ -1,3 +1,4 @@
+source ~/repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh 
 neofetch
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -8,7 +9,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/will/.oh-my-zsh"
@@ -122,15 +123,19 @@ export PYENV_VIRTUALWRAPPER_PREFER_PYENV="true"
 export PYTHONPATH=/usr/bin/python3
 
 #default to neovim
-alias vim="nvim"
-alias vi="nvim"
-alias oldvim="\vim"
+#alias vim="nvim"
+alias vi="vim"
+#alias oldvim="\vim"
 
 #wxWidgets
 export WX_CONFIG=/usr/local/x86_64/bin/wx-config
 
 #tmux
-alias start_tmux="tmux new-session -A -s main"
+##general tmux session
+alias gen_tmux="tmux new-session -A -s main"
+
+##development tmux session
+alias dev_tmux="tmux new-session -A -s dev"
 
 #browser-sync
 alias serve='browser-sync start --directory --server --files "*.js, *.html, *.css"'
@@ -160,3 +165,5 @@ if type rg &> /dev/null; then
 fi
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+#node version manager
+source /usr/share/nvm/init-nvm.sh

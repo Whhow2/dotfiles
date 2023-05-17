@@ -28,5 +28,75 @@
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1680201260.5308633
+    },
+    "9d7beef8-a509-4693-85f7-97cbc85b55d0": {
+        "id": "9d7beef8-a509-4693-85f7-97cbc85b55d0",
+        "name": "jw.org",
+        "keyword": "jw",
+        "cmd": "https://www.jw.org/en/search/?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1681004010.6144416
+    },
+    "72cfc072-5ac5-48c6-b38d-a752c5e411e9": {
+        "id": "72cfc072-5ac5-48c6-b38d-a752c5e411e9",
+        "name": "WOL-E",
+        "keyword": "we",
+        "cmd": "https://wol.jw.org/en/wol/s/r1/lp-e?q=%s&st=&p=sen&r=occ",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1681004105.9982917
+    },
+    "986bf025-6693-44f3-9630-c9116b5e6b6d": {
+        "id": "986bf025-6693-44f3-9630-c9116b5e6b6d",
+        "name": "WOL-E Scriptures",
+        "keyword": "se",
+        "cmd": "https://wol.jw.org/en/wol/l/r1/lp-e?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1681004192.4449694
+    },
+    "2739fead-e52f-4884-9ea1-c8d21bcd8fe3": {
+        "id": "2739fead-e52f-4884-9ea1-c8d21bcd8fe3",
+        "name": "WOL-CR",
+        "keyword": "wh",
+        "cmd": "https://wol.jw.org/ht/wol/s/r60/lp-cr?q=%s&st=&p=sen&r=occ",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1681004270.0745304
+    },
+    "01ea3338-f445-45de-b854-2e37367b4816": {
+        "id": "01ea3338-f445-45de-b854-2e37367b4816",
+        "name": "WOL-CR Scriptures",
+        "keyword": "sh",
+        "cmd": "https://wol.jw.org/ht/wol/l/r60/lp-cr?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1681004306.552865
+    },
+    "3ae4288f-51f1-4d47-86ff-ca564c809768": {
+        "id": "3ae4288f-51f1-4d47-86ff-ca564c809768",
+        "name": "jw.org Pictures",
+        "keyword": "jwp",
+        "cmd": "https://www.google.com/search?tbm=isch&q=site:jw.org+%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1681004371.4995177
+    },
+    "698f27c1-6fdf-4738-bd7f-824c616eca74": {
+        "id": "698f27c1-6fdf-4738-bd7f-824c616eca74",
+        "name": "PPD",
+        "keyword": "ppd",
+        "cmd": "https://jwsite.sharepoint.com/sites/whq-wrt-ppd-translation/_layouts/15/search.aspx/siteall?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1681761863.1347947
     }
 }
