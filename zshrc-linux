@@ -1,5 +1,6 @@
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
+clear
 
 neofetch
 
@@ -126,7 +127,7 @@ export PYTHONPATH=/usr/bin/python3
 
 #default to neovim
 #alias vim="nvim"
-alias vi="vim"
+alias vi="nvim"
 #alias oldvim="\vim"
 
 #wxWidgets
