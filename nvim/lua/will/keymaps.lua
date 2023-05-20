@@ -25,3 +25,6 @@ keymap("n", "<F6>", ":NvimTreeFocus<cr>", opts)
 
 -- Emmet
 vim.g.user_emmet_leader_key = ","
+
+-- clear search highlighting
+keymap("n", "<leader>h", ":noh<cr>", opts)
