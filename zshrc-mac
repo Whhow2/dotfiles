@@ -115,8 +115,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #pythonpath
-export PYTHONPATH=$(brew --prefix)/lib/python3.10/site-packages:$PYTHONPATH
-export PATH=$PATH:~/Library/Python/3.10/bin
+export PYTHONPATH=$(brew --prefix)/lib/python3.11/site-packages:$PYTHONPATH
+export PATH=$PATH:~/Library/Python/3.11/bin
 
 #virtualenvwrapper settings
 export WORKON_HOME=$HOME/.virtualenvs
