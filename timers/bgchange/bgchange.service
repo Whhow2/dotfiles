@@ -1,0 +1,5 @@
+[Unit]
+Description=Change background image periodically
+
+[Service]
+ExecStart=/home/will/.bgchange

@@ -1,0 +1,5 @@
+require "will.options"
+require "will.keymaps"
+require "will.plugins"
+require "will.colorscheme"
+require "will.completions"

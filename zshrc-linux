@@ -1,3 +1,7 @@
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+clear
+
 neofetch
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -8,7 +12,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/will/.oh-my-zsh"
@@ -122,15 +126,19 @@ export PYENV_VIRTUALWRAPPER_PREFER_PYENV="true"
 export PYTHONPATH=/usr/bin/python3
 
 #default to neovim
-alias vim="nvim"
+#alias vim="nvim"
 alias vi="nvim"
-alias oldvim="\vim"
+#alias oldvim="\vim"
 
 #wxWidgets
 export WX_CONFIG=/usr/local/x86_64/bin/wx-config
 
 #tmux
-alias start_tmux="tmux new-session -A -s main"
+##general tmux session
+alias gen_tmux="tmux new-session -A -s main"
+
+##development tmux session
+alias dev_tmux="tmux new-session -A -s dev"
 
 #browser-sync
 alias serve='browser-sync start --directory --server --files "*.js, *.html, *.css"'
@@ -151,12 +159,13 @@ alias vialac="vi ~/.config/alacritty/alacritty.yml"
 alias vi3="vi ~/.config/i3/config"
 
 #open polybar
-alias vipbar="vi ~/.config/polybar/polybar"
+alias vipbar="vi ~/.config/polybar/config.ini"
 
 #fzf setup
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
   export FZF_DEFAULT_OPTS='-m --height 50% --border'
 fi
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+#node version manager
+source /usr/share/nvm/init-nvm.sh

@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-exec picom
+#exec picom
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 focus_on_window_activation focus
@@ -209,8 +209,7 @@ bindsym Control+Mod1+l exec betterlockscreen -l dim
 
 # auto lock the screen
 #exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
-# exec --no-startup-id betterlockscreen -w dim
-exec --no-startup-id feh --no-fehbg --bg-scale --randomize ~/Documents/wallpaper/
+exec --no-startup-id betterlockscreen -w dim
 
 gaps inner 10
 
@@ -227,13 +226,3 @@ exec --no-startup-id alacritty -T "Dev Terminal"
 for_window [class="(?i)alacritty" title="Dev Terminal"] move to workspace 2: Dev
 exec --no-startup-id vmplayer
 for_window [class="(?i)vmplayer"] move to workspace 3: vmware
-
-## Clipboard Screenshots
-bindsym Mod1+Shift+1 --no-startup-id maim | xclip -selection clipboard -t image/png
-bindsym Mod1+Shift+2 exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
-bindsym Mod1+Shift+3 exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
-
-## File Screenshots
-bindsym Mod1+Shift+4 exec --no-startup-id maim "/home/$USER/Pictures/Screenshot-$(date +%F)-$(date +%T)" 
-bindsym Mod1+Shift+5 exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
-bindsym Mod1+Shift+6 exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"

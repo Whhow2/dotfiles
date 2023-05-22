@@ -1,0 +1,6 @@
+[Unit]
+Description=Timer for background change
+
+[Timer]
+OnActiveSec=5sec
+OnUnitActiveSec=15min

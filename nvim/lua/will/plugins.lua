@@ -46,7 +46,8 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs")
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
-	use("kyazdani42/nvim-tree.lua")
+	--[[ use("kyazdani42/nvim-tree.lua") ]]
+	use("nvim-tree/nvim-tree.lua")
 	use("mattn/emmet-vim")
 	use("xiyaowong/transparent.nvim")
 	use("akinsho/toggleterm.nvim")
@@ -114,7 +115,7 @@ return packer.startup(function(use)
 	})
 
 	-- vimspector
---	use("puremourning/vimspector")
+	--	use("puremourning/vimspector")
 
 	-- DAP debugging
 	--[[ use { ]]
