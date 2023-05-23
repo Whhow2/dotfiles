@@ -96,51 +96,20 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 
 	-- debugging
-	--[[ use("mfussenegger/nvim-dap") ]]
-	--[[ use({ "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } }) ]]
-	--[[ use({ ]]
-	--[[ 	"microsoft/vscode-js-debug", ]]
-	--[[ 	opt = true, ]]
-	--[[ 	run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out", ]]
-	--[[ }) ]]
 	use({
 		"mfussenegger/nvim-dap",
 		requires = {
 			{ "rcarriga/nvim-dap-ui" },
 			{ "mxsdev/nvim-dap-vscode-js" },
 		},
-		--[[ config = function() ]]
-		--[[ 	require("will.dap") ]]
-		--[[ end, ]]
 	})
+	use({
+		"microsoft/vscode-js-debug",
+		opt = true,
+		run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
+	})
+	use("mfussenegger/nvim-dap-python")
 
-	-- vimspector
-	--	use("puremourning/vimspector")
-
-	-- DAP debugging
-	--[[ use { ]]
-	--[[   "mfussenegger/nvim-dap", ]]
-	--[[   opt = true, ]]
-	--[[   module = { "dap" }, ]]
-	--[[   requires = { ]]
-	--[[     "theHamsta/nvim-dap-virtual-text", ]]
-	--[[     "rcarriga/nvim-dap-ui", ]]
-	--[[     "mfussenegger/nvim-dap-python", ]]
-	--[[     "nvim-telescope/telescope-dap.nvim", ]]
-	--[[     { "leoluz/nvim-dap-go", module = "dap-go" }, ]]
-	--[[     { "jbyuki/one-small-step-for-vimkind", module = "osv" }, ]]
-	--[[     { "mxsdev/nvim-dap-vscode-js" }, ]]
-	--[[     { ]]
-	--[[       "microsoft/vscode-js-debug", ]]
-	--[[       opt = true, ]]
-	--[[       run = "npm install --legacy-peer-deps && npm run compile", ]]
-	--[[     }, ]]
-	--[[   }, ]]
-	--[[   config = function() ]]
-	--[[     require("will.dap").setup() ]]
-	--[[   end, ]]
-	--[[   disable = false, ]]
-	--[[ } ]]
 	-- Automatical setup config after cloning packer.nvim
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
