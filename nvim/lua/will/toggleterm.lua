@@ -4,7 +4,8 @@ if not status_ok then
 end
 
 toggleterm.setup({
-	size = 20,
+	--[[ size = 20, ]]
+	size = 15,
 	open_mapping = [[<c-\>]],
 	hide_numbers = true,
 	shade_filetypes = {},
@@ -13,17 +14,18 @@ toggleterm.setup({
 	start_in_insert = true,
 	insert_mappings = true,
 	persist_size = true,
-	direction = "float",
+	--[[ direction = "float", ]]
+	direction = "horizontal",
 	close_on_exit = true,
 	shell = vim.o.shell,
-	float_opts = {
-		border = "curved",
-		winblend = 0,
-		highlights = {
-			border = "Normal",
-			background = "Normal",
-		},
-	},
+	--[[ float_opts = { ]]
+	--[[ 	border = "curved", ]]
+	--[[ 	winblend = 0, ]]
+	--[[ 	highlights = { ]]
+	--[[ 		border = "Normal", ]]
+	--[[ 		background = "Normal", ]]
+	--[[ 	}, ]]
+	--[[ }, ]]
 })
 
 function _G.set_terminal_keymaps()
@@ -39,7 +41,12 @@ end
 vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
 
 local Terminal = require("toggleterm.terminal").Terminal
-local gitui = Terminal:new({ cmd = "gitui", hidden = true })
+local gitui = Terminal:new({
+	cmd = "gitui",
+	hidden = true,
+	direction = "float",
+	float_opts = { border = "curved", winblend = 0, highlights = { border = "Normal", background = "Normal" } },
+})
 
 function _GITUI_TOGGLE()
 	gitui:toggle()
