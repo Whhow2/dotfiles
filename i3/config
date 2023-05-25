@@ -127,16 +127,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Main"
-set $ws2 "2: Dev"
-set $ws3 "3: vmware"
-set $ws4 "4"
+set $ws1 "1: ff"
+set $ws2 "2: obs"
+set $ws3 "3: term"
+set $ws4 "4: teams"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "10: vmware"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -219,14 +219,16 @@ gaps inner 10
 #exec --no-startup-id sh -c 'sleep 1; i3-msg "focus left"; i3-msg "splitv"'
 #exec --no-startup-id sh -c 'sleep 1.5; exec obsidian'
 #
-exec --no-startup-id obsidian
-for_window [class="(?i)obsidian"] move to workspace 1: Main
+for_window [class="(?i)firefox"] move to workspace 1: ff
 exec --no-startup-id firefox
-for_window [class="(?i)firefox"] move to workspace 1: Main
-exec --no-startup-id alacritty -T "Dev Terminal"
-for_window [class="(?i)alacritty" title="Dev Terminal"] move to workspace 2: Dev
+for_window [class="(?i)obsidian"] move to workspace 2: obs
+exec --no-startup-id obsidian
+for_window [class="(?i)alacritty" title="Alacritty"] move to workspace 3: term
+exec --no-startup-id alacritty -T "Alacritty"
+for_window [class="Google-chrome"] move to workspace 4: Teams
+exec --no-startup-id google-chrome-stable --profile-directory=Default --app-id=cifhbcnohmdccbgoicgdjpfamggdegmo
+for_window [class="(?i)vmplayer"] move to workspace 10: vmware
 exec --no-startup-id vmplayer
-for_window [class="(?i)vmplayer"] move to workspace 3: vmware
 
 ## Clipboard Screenshots
 bindsym Mod1+Shift+1 --no-startup-id maim | xclip -selection clipboard -t image/png
