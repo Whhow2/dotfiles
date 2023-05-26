@@ -228,7 +228,7 @@ gaps inner 10
 for_window [class="(?i)firefox"] move to workspace $ws1
 exec --no-startup-id firefox
 for_window [title="Dev Terminal"] move to workspace $ws2
-exec --no-startup-id alacritty -T "Dev Terminal"
+exec --no-startup-id alacritty -T "Dev Terminal" -e $HOME/.dev_session.sh
 for_window [class="(?i)obsidian"] move to workspace $ws3
 exec --no-startup-id obsidian
 # for_window [class="(?i)alacritty" title="Alacritty"] move to workspace 3: term
