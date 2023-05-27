@@ -115,7 +115,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: SauceCodePro Nerd Font
+    # family: SauceCodePro Nerd Font
+    # family: DroidSansM Nerd Font
+    # family: FiraCode Nerd Font
+    family: CaskaydiaCove Nerd Font
     # The `style` can be specified to pick a specific face.
     #style: Regular
   # Bold font face
@@ -403,31 +406,30 @@ colors:
   name: Atelierforest (dark)
   author: Chris Kempson
   primary:
-    background: "#1b1918"
-    foreground: "#a8a19f"
+    background: '#1b1918'
+    foreground: '#a8a19f'
   cursor:
-    text: "#1b1918"
-    cursor: "#a8a19f"
+    text: '#1b1918'
+    cursor: '#a8a19f'
   normal:
-    black: "#1b1918"
-    red: "#f22c40"
-    green: "#5ab738"
-    yellow: "#d5911a"
-    blue: "#407ee7"
-    magenta: "#6666ea"
-    cyan: "#00ad9c"
-    white: "#a8a19f"
+    black: '#1b1918'
+    red: '#f22c40'
+    green: '#5ab738'
+    yellow: '#d5911a'
+    blue: '#407ee7'
+    magenta: '#6666ea'
+    cyan: '#00ad9c'
+    white: '#a8a19f'
   bright:
-    black: "#766e6b"
-    red: "#f22c40"
-    green: "#5ab738"
-    yellow: "#d5911a"
-    blue: "#407ee7"
-    magenta: "#6666ea"
-    cyan: "#00ad9c"
-    white: "#f1efee"
+    black: '#766e6b'
+    red: '#f22c40'
+    green: '#5ab738'
+    yellow: '#d5911a'
+    blue: '#407ee7'
+    magenta: '#6666ea'
+    cyan: '#00ad9c'
+    white: '#f1efee'
 theme: Atelierforest.dark
-
 # Startup directory
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
