@@ -1,5 +1,6 @@
-require("bufferline").setup({
-	{
-		mode = "tabs",
-	},
+local bufferline = require("bufferline")
+bufferline.setup({
+	--[[ options = { ]]
+	--[[ 	mode = "tabs", ]]
+	--[[ }, ]]
 })

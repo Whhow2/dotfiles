@@ -16,3 +16,5 @@ require("will.treesitter")
 require("will.nvim-tree")
 require("will.dap")
 require("will.dap-python")
+--[[ require("will.bufferline") ]]
+require("will.nvim-surround")
