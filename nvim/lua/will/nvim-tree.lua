@@ -85,6 +85,9 @@ local function on_attach(bufnr)
 	vim.keymap.set("n", "v", api.node.open.vertical, opts("Open: Vertical Split"))
 	vim.keymap.set("n", "s", api.node.open.horizontal, opts("Open: Horizontal Split"))
 	vim.keymap.set("n", "Z", api.node.run.system, opts("Run System"))
+
+	-- transparent view
+	vim.cmd([[hi NvimTreeNormal guibg=NONE ctermbg=NONE]])
 end
 
 nvim_tree.setup({

@@ -36,8 +36,3 @@ end
 
 vim.opt.shortmess:append("c")
 vim.opt.iskeyword:append("-") -- includes dashes when changing word with ciw or diw
-
--- vimspector
-vim.g.vimspector_base_dir = "/home/will/.local/share/nvim/site/pack/packer/start/vimspector"
-
-vim.g.onedarker_terminal_italics = 1
