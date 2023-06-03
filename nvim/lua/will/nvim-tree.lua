@@ -87,7 +87,7 @@ local function on_attach(bufnr)
 	vim.keymap.set("n", "Z", api.node.run.system, opts("Run System"))
 
 	-- transparent view
-	vim.cmd([[hi NvimTreeNormal guibg=NONE ctermbg=NONE]])
+	-- vim.cmd([[hi NvimTreeNormal guibg=NONE ctermbg=NONE]])
 end
 
 nvim_tree.setup({

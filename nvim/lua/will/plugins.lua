@@ -62,6 +62,9 @@ return packer.startup(function(use)
 
 	-- colorschemes
 	use("lunarvim/Onedarker.nvim")
+	use("olimorris/onedarkpro.nvim")
+	use({ "catppuccin/nvim", as = "catppuccin" })
+	use("folke/tokyonight.nvim")
 
 	-- completion plugins
 	use("hrsh7th/nvim-cmp")
@@ -70,7 +73,7 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-cmdline")
 	use("saadparwaiz1/cmp_luasnip")
 	use("hrsh7th/cmp-nvim-lsp")
-
+	--[[ use {'neoclide/coc.nvim', branch = 'release'} ]]
 	-- snippet engines
 	use("L3MON4D3/LuaSnip")
 	use("rafamadriz/friendly-snippets")
