@@ -24,7 +24,7 @@ keymap("n", "<leader>tc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 --[[ keymap("n", "<leader>tf", "<cmd>Telescope live_grep<cr>", opts) ]]
 -- Nvimtree
 keymap("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<F6>", ":NvimTreeFocus<cr>", opts)
+keymap("n", "<F5>", ":NvimTreeFocus<cr>", opts)
 
 -- Emmet
 vim.g.user_emmet_leader_key = ","
@@ -33,4 +33,4 @@ vim.g.user_emmet_leader_key = ","
 keymap("n", "<leader>h", ":noh<cr>", opts)
 
 -- toggle gitui
-keymap("n", "<leader>g", ":lua _GITUI_TOGGLE()<cr>", opts)
+--[[ keymap("n", "<leader>g", ":lua _GITUI_TOGGLE()<cr>", opts) ]]
