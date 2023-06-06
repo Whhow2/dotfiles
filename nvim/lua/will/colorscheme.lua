@@ -17,7 +17,7 @@ require("onedarkpro").setup({
 })
 
 require("catppuccin").setup({
-	transparent_background = true,
+	--[[ transparent_background = true, ]]
 	styles = {
 		comments = {},
 		conditionals = {},

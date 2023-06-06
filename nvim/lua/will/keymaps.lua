@@ -34,3 +34,7 @@ keymap("n", "<leader>h", ":noh<cr>", opts)
 
 -- toggle gitui
 --[[ keymap("n", "<leader>g", ":lua _GITUI_TOGGLE()<cr>", opts) ]]
+--
+
+-- toggle transparency
+keymap("n", "<leader>z", "<cmd>TransparentToggle<cr>", opts)
