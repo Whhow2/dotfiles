@@ -58,6 +58,7 @@ return packer.startup(function(use)
 	})
 	use("kylechui/nvim-surround")
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+	use("lukas-reineke/indent-blankline.nvim")
 	use({ "cameron-wags/rainbow_csv.nvim" })
 
 	-- colorschemes

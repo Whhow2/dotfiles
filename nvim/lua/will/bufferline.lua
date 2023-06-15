@@ -10,7 +10,7 @@ bufferline.setup({
 			},
 		},
 		--[[ options = { ]]
-		--[[ 	mode = "tabs", ]]
+		mode = "tabs",
 		--[[ }, ]]
 	},
 })

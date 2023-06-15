@@ -161,6 +161,15 @@ alias vi3="vi ~/.config/i3/config"
 #open polybar
 alias vipbar="vi ~/.config/polybar/config.ini"
 
+#change to obsididian directory
+alias cdobs="cd ~/Documents/obsidian-main-vault"
+
+#git commit for obsidian-main-vault
+##arch-desktop
+alias gcad='git commit -m "arch-desktop"'
+alias gcmac='git commit -m "macbook"'
+alias gcavm='git commit -m "arch-mbp18-vmware"'
+
 #fzf setup
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
