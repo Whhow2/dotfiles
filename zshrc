@@ -1,6 +1,8 @@
+if [ -f $HOME/.ssh/id_ed25519 ]; then
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 clear
+fi
 
 neofetch
 
@@ -15,7 +17,7 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/will/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -119,11 +121,19 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export PYTHONPATH=/usr/bin/python3
+export PYTHONPATH=$(brew --prefix)/lib/python3.11/site-packages:$PYTHONPATH
+export PATH=$PATH:~/Library/Python/3.11/bin
 eval "$(pyenv init - )"
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+export VIRTUALENVWRAPPER_VIRTUALENV=$(which virtualenv)
 export PYENV_VIRTUALWRAPPER_PREFER_PYENV="true"
-export PYTHONPATH=/usr/bin/python3
+if [ ! -f /usr/bin/virtualenvwrapper.sh ]; then
+  source /usr/local/bin/virtualenvwrapper.sh
+else
+  source /usr/bin/virtualenvwrapper.sh
+fi
 
 #default to neovim
 #alias vim="nvim"
@@ -177,4 +187,8 @@ if type rg &> /dev/null; then
 fi
 
 #node version manager
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
