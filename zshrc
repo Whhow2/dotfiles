@@ -122,8 +122,10 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PYTHONPATH=/usr/bin/python3
+if [ -f ~/Library/Python/3.11/bin ]; then
 export PYTHONPATH=$(brew --prefix)/lib/python3.11/site-packages:$PYTHONPATH
 export PATH=$PATH:~/Library/Python/3.11/bin
+fi
 eval "$(pyenv init - )"
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
