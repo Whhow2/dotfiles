@@ -53,7 +53,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(emmet-mode evil general markdown-mode company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode evil-collection ivy-rich which-key rainbow-delimiters doom-modeline counsel ivy use-package)))
+   '(evil general markdown-mode company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode evil-collection ivy-rich which-key rainbow-delimiters doom-modeline counsel ivy use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
