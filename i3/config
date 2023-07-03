@@ -127,15 +127,19 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: ff"
-set $ws2 "2: obs"
-set $ws3 "3: dev"
+# set $ws1 "1: ff"
+set $ws1 "1: main"
+# set $ws2 "2: obs"
+set $ws2 "2: dev"
+# set $ws3 "3: dev"
+set $ws3 "3: bethel"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9: teams"
+# set $ws9 "9: teams"
+set $ws9 "9:"
 set $ws10 "10: vmware"
 
 # switch to workspace
@@ -225,17 +229,17 @@ gaps inner 10
 #exec --no-startup-id sh -c 'sleep 1; i3-msg "focus left"; i3-msg "splitv"'
 #exec --no-startup-id sh -c 'sleep 1.5; exec obsidian'
 #
-for_window [class="(?i)firefox"] move to workspace $ws1
-exec --no-startup-id firefox
-for_window [class="(?i)obsidian"] move to workspace $ws2
-exec --no-startup-id obsidian
-for_window [title="Dev Terminal"] move to workspace $ws3
-exec --no-startup-id alacritty -T "Dev Terminal" -e $HOME/.dev_session.sh
-# for_window [class="(?i)alacritty" title="Alacritty"] move to workspace 3: term
-for_window [class="Google-chrome"] move to workspace $ws9
-exec --no-startup-id google-chrome-stable --profile-directory=Default --app-id=cifhbcnohmdccbgoicgdjpfamggdegmo
-for_window [class="(?i)vmplayer"] move to workspace $ws10
-exec --no-startup-id vmplayer
+# for_window [class="(?i)firefox"] move to workspace $ws1
+# exec --no-startup-id firefox
+# for_window [class="(?i)obsidian"] move to workspace $ws2
+# exec --no-startup-id obsidian
+# for_window [title="Dev Terminal"] move to workspace $ws3
+# exec --no-startup-id alacritty -T "Dev Terminal" -e $HOME/.dev_session.sh
+# # for_window [class="(?i)alacritty" title="Alacritty"] move to workspace 3: term
+# for_window [class="Google-chrome"] move to workspace $ws9
+# exec --no-startup-id google-chrome-stable --profile-directory=Default --app-id=cifhbcnohmdccbgoicgdjpfamggdegmo
+# for_window [class="(?i)vmplayer"] move to workspace $ws10
+# exec --no-startup-id vmplayer
 
 ## Clipboard Screenshots
 bindsym Mod1+Shift+1 --no-startup-id maim | xclip -selection clipboard -t image/png
