@@ -17,10 +17,10 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 --[[ keymap("n", "<leader>t", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes'))<cr>", opts) ]]
-keymap("n", "<leader>p", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>tf", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<leader>tb", "<cmd>Telescope buffers<cr>", opts)
-keymap("n", "<leader>tc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+--[[ keymap("n", "<leader>p", "<cmd>Telescope find_files<cr>", opts) ]]
+--[[ keymap("n", "<leader>tf", "<cmd>Telescope live_grep<cr>", opts) ]]
+--[[ keymap("n", "<leader>tb", "<cmd>Telescope buffers<cr>", opts) ]]
+--[[ keymap("n", "<leader>tc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts) ]]
 --[[ keymap("n", "<leader>tf", "<cmd>Telescope live_grep<cr>", opts) ]]
 -- Nvimtree
 keymap("n", "<leader>n", ":NvimTreeToggle<cr>", opts)

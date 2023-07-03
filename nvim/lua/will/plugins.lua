@@ -75,6 +75,8 @@ return packer.startup(function(use)
 		"goolord/alpha-nvim",
 		requires = { "nvim-tree/nvim-web-devicons" },
 	})
+	use({ "ggandor/leap.nvim", requires = { "tpope/vim-repeat" } })
+	use({ "folke/which-key.nvim" })
 
 	-- colorschemes
 	use("lunarvim/Onedarker.nvim")

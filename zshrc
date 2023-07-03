@@ -182,6 +182,9 @@ alias gcad='git commit -m "arch-desktop"'
 alias gcmac='git commit -m "macbook"'
 alias gcavm='git commit -m "arch-mbp18-vmware"'
 
+## change to dotfiles directory
+alias cddot='cd ~/dotfiles'
+
 #fzf setup
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
