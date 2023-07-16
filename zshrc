@@ -185,6 +185,12 @@ alias gcavm='git commit -m "arch-mbp18-vmware"'
 ## change to dotfiles directory
 alias cddot='cd ~/dotfiles'
 
+## run xmodmap config
+alias xm='xmodmap ~/.Xmodmap'
+
+## change to config folder
+alias cdconf='cd ~/.config/'
+
 #fzf setup
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
