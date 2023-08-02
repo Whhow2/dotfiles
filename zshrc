@@ -191,6 +191,9 @@ alias xm='xmodmap ~/.Xmodmap'
 ## change to config folder
 alias cdconf='cd ~/.config/'
 
+## change to dev folder
+alias cddev='cd ~/dev'
+
 #fzf setup
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
