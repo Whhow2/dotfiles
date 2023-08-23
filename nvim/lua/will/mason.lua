@@ -1,13 +1,14 @@
 local servers = {
-  "clangd",
-  "cssls",
-  "emmet_ls",
-  "lua_ls",
+	"clangd",
+	"cssls",
+	"emmet_ls",
+	"lua_ls",
 	"pyright",
 	"jsonls",
-  "sqlls",
-  "tsserver",
-  "yamlls"
+	"powershell_es",
+	"sqlls",
+	"tsserver",
+	"yamlls",
 }
 
 local settings = {
