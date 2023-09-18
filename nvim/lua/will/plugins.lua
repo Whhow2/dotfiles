@@ -43,7 +43,6 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- allows packer to manage itself
 	use("nvim-lua/popup.nvim") -- Popup API from vim for neovim
 	use("nvim-lua/plenary.nvim") -- useful functions for other plugins
-	use("windwp/nvim-autopairs")
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
 	--[[ use("kyazdani42/nvim-tree.lua") ]]
@@ -54,12 +53,17 @@ return packer.startup(function(use)
 	--[[ use("rcarriga/nvim-notify") -- more pleasing notifications ]]
 	use({
 		"nvim-lualine/lualine.nvim",
-		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+		--[[ requires = { "nvim-tree/nvim-web-devicons", opt = true }, ]]
 	})
 	use("kylechui/nvim-surround")
-	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+	use({
+		"akinsho/bufferline.nvim",
+		tag = "*",
+		--[[ requires = "nvim-tree/nvim-web-devicons" ]]
+	})
 	use("lukas-reineke/indent-blankline.nvim")
-	use({ "cameron-wags/rainbow_csv.nvim" })
+	use("mechatroner/rainbow_csv")
+	--[[ use({ "cameron-wags/rainbow_csv.nvim" }) ]]
 	--[[ use({ ]]
 	--[[ "glepnir/dashboard-nvim", ]]
 	--[[ event = "VimEnter", ]]
@@ -73,7 +77,7 @@ return packer.startup(function(use)
 	--[[ use({ "glepnir/dashboard-nvim", event = "VimEnter", requires = { "nvim-tree/nvim-web-devicons" } }) ]]
 	use({
 		"goolord/alpha-nvim",
-		requires = { "nvim-tree/nvim-web-devicons" },
+		--[[ requires = { "nvim-tree/nvim-web-devicons" }, ]]
 	})
 	use({ "ggandor/leap.nvim", requires = { "tpope/vim-repeat" } })
 	use({ "folke/which-key.nvim" })
@@ -104,6 +108,9 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim") -- simple to use language server installer
 	use("neovim/nvim-lspconfig") -- enables LSP
 	use("jose-elias-alvarez/null-ls.nvim") -- LSP diagnostics and code actions
+	use({
+		"nvimdev/lspsaga.nvim",
+	})
 
 	-- install telescope
 	use("nvim-telescope/telescope.nvim")
@@ -121,6 +128,14 @@ return packer.startup(function(use)
 		run = ":TSUpdate",
 	})
 	use("JoosepAlviste/nvim-ts-context-commentstring")
+	use("windwp/nvim-autopairs")
+	use({
+		"windwp/nvim-ts-autotag",
+		dependencies = "nvim-treesitter/nvim-treesitter",
+		config = function()
+			require("nvim-ts-autotag").setup({})
+		end,
+	})
 
 	-- git
 	use("lewis6991/gitsigns.nvim")
@@ -133,11 +148,11 @@ return packer.startup(function(use)
 			{ "mxsdev/nvim-dap-vscode-js" },
 		},
 	})
-	use({
-		"microsoft/vscode-js-debug",
-		opt = true,
-		run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
-	})
+	--[[ use({ ]]
+	--[[ 	"microsoft/vscode-js-debug", ]]
+	--[[ 	opt = true, ]]
+	--[[ 	run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out", ]]
+	--[[ }) ]]
 	use("mfussenegger/nvim-dap-python")
 
 	-- Automatical setup config after cloning packer.nvim

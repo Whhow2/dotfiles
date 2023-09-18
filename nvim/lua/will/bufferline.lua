@@ -6,6 +6,7 @@ bufferline.setup({
 				filetype = "NvimTree",
 				text = "File Tree",
 				highlight = "Directory",
+				separator_style = "slope",
 				separator = true, -- use a "true" to enable the default, or set your own character
 			},
 		},
