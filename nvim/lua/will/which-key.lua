@@ -12,5 +12,7 @@ wk.register({
 		g = { "<cmd>Telescope live_grep<cr>", "Search files for text" },
 		c = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search current file for text" },
 		p = { "<cmd>Telescope project<cr>", "Open recent project" },
+		w = { "<cmd>Telescope file_browser<CR>", "File Browser" },
+		d = { "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>", "File Browser (current directory)" },
 	},
 }, { prefix = "<leader>" })
