@@ -168,6 +168,9 @@ alias srczsh="source ~/.zshrc"
 #open alacritty.yml
 alias vialac="vi ~/.config/alacritty/alacritty.yml"
 
+#open kitty.conf
+alias vikit="vi ~/.config/kitty/kitty.conf"
+
 #open i3 config
 alias vi3="vi ~/.config/i3/config"
 

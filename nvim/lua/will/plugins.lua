@@ -81,6 +81,7 @@ return packer.startup(function(use)
 	})
 	use({ "ggandor/leap.nvim", requires = { "tpope/vim-repeat" } })
 	use({ "folke/which-key.nvim" })
+	use({ "tpope/vim-fugitive" })
 
 	-- colorschemes
 	use("lunarvim/Onedarker.nvim")

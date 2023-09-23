@@ -38,3 +38,6 @@ keymap("n", "<leader>h", ":noh<cr>", opts)
 
 -- toggle transparency
 keymap("n", "<leader>z", "<cmd>TransparentToggle<cr>", opts)
+
+-- macros
+vim.fn.setreg("a", "ggVG")
