@@ -1,5 +1,6 @@
 require("will.options")
 require("will.keymaps")
+require("will.autocommands")
 require("will.plugins")
 require("will.colorscheme")
 require("will.lualine")
