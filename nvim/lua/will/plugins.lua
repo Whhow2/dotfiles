@@ -112,6 +112,7 @@ return packer.startup(function(use)
 	use({
 		"nvimdev/lspsaga.nvim",
 	})
+	--[[ use({ "OmniSharp/Omnisharp-vim" }) ]]
 
 	-- install telescope
 	use("nvim-telescope/telescope.nvim")

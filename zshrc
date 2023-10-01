@@ -14,7 +14,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.config/emacs:$HOME/.emacs.d/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.config/emacs:$HOME/.emacs.d/bin:$HOME/.dotnet/tools:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -158,6 +158,9 @@ alias serve='browser-sync start --directory --server --files "*.js, *.html, *.cs
 
 #open nvim config
 alias viconf="vi ~/.config/nvim/init.vim"
+
+#cd to nvim config
+alias cdnvim="cd ~/dotfiles/nvim/lua/will"
 
 #open .zshrc config
 alias vizsh="vi ~/.zshrc && source ~/.zshrc"

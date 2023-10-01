@@ -1,6 +1,7 @@
 local servers = {
 	"clangd",
 	"cssls",
+	"csharp_ls",
 	"emmet_ls",
 	"lua_ls",
 	"pyright",
@@ -9,6 +10,7 @@ local servers = {
 	"sqlls",
 	"tsserver",
 	"yamlls",
+	--[[ "omnisharp", ]]
 }
 
 local settings = {

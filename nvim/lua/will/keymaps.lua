@@ -15,16 +15,22 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
---[[ keymap("n", "<leader>t", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes'))<cr>", opts) ]]
---[[ keymap("n", "<leader>p", "<cmd>Telescope find_files<cr>", opts) ]]
---[[ keymap("n", "<leader>tf", "<cmd>Telescope live_grep<cr>", opts) ]]
---[[ keymap("n", "<leader>tb", "<cmd>Telescope buffers<cr>", opts) ]]
---[[ keymap("n", "<leader>tc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts) ]]
---[[ keymap("n", "<leader>tf", "<cmd>Telescope live_grep<cr>", opts) ]]
--- Nvimtree
+-- Better saving
+keymap("n", "zz", ":update<cr>", opts)
+-- save while in insert mode
+keymap("i", "<C-z>", "<esc>:update<cr>a", opts)
+-- Quit without saving
+keymap("i", "zx", "<esc>:q!<cr>", opts)
+
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
+keymap("n", "<leader>fl", "<cmd>Telescope buffers<cr>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
+keymap("n", "<leader>fb", "<cmd>Telescope file_browser<CR>", opts)
+keymap("n", "<leader>fd", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>", opts)
 keymap("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<F5>", ":NvimTreeFocus<cr>", opts)
 
 -- Emmet
 vim.g.user_emmet_leader_key = ","

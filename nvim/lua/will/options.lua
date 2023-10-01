@@ -28,7 +28,6 @@ local options = {
 	completeopt = { "menuone", "noselect" }, -- menuone brings up popup window even if only option so other features are accessible (e.g. definition. noselect doesn't default to a choice. this prevents inadvertent selections.
 	termguicolors = true, -- expand color range for terminal
 	cursorline = true,
-	foldmethod = "indent",
 }
 
 for k, v in pairs(options) do
