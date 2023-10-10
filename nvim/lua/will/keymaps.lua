@@ -20,7 +20,7 @@ keymap("n", "zz", ":update<cr>", opts)
 -- save while in insert mode
 keymap("i", "<C-z>", "<esc>:update<cr>a", opts)
 -- Quit without saving
-keymap("i", "zx", "<esc>:q!<cr>", opts)
+keymap("n", "zx", "<esc>:q!<cr>", opts)
 
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)

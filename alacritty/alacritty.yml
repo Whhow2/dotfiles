@@ -57,12 +57,12 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: full
+  decorations: none
   # Background opacity
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.75
+  opacity: 0.80
 # Startup Mode (changes require restart)
 #
 # Values for `startup_mode`:
@@ -149,7 +149,7 @@ font:
   # The `style` can be specified to pick a specific face.
   #style: Bold Italic
   # Point size
-  size: 10.0
+  size: 12.0
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
@@ -403,33 +403,38 @@ font:
   #- -c
   #- "tmux new-session -A -s main"
 colors:
-  name: Atelierforest (dark)
-  author: Chris Kempson
+  # Default colors
   primary:
-    background: '#1b1918'
-    foreground: '#a8a19f'
+    background: '#292C3E'
+    foreground: '#EBEBEB'
+
+  # Cursor colors
   cursor:
-    text: '#1b1918'
-    cursor: '#a8a19f'
+    text: '#EBEBEB'
+    cursor: '#FF261E'
+
+  # Normal colors
   normal:
-    black: '#1b1918'
-    red: '#f22c40'
-    green: '#5ab738'
-    yellow: '#d5911a'
-    blue: '#407ee7'
-    magenta: '#6666ea'
-    cyan: '#00ad9c'
-    white: '#a8a19f'
+    black: '#0d0d0d'
+    red: '#FF301B'
+    green: '#A0E521'
+    yellow: '#FFC620'
+    blue: '#1BA6FA'
+    magenta: '#8763B8'
+    cyan: '#21DEEF'
+    white: '#EBEBEB'
+
+  # Bright colors
   bright:
-    black: '#766e6b'
-    red: '#f22c40'
-    green: '#5ab738'
-    yellow: '#d5911a'
-    blue: '#407ee7'
-    magenta: '#6666ea'
-    cyan: '#00ad9c'
-    white: '#f1efee'
-theme: Atelierforest.dark
+    black: '#6D7070'
+    red: '#FF4352'
+    green: '#B8E466'
+    yellow: '#FFD750'
+    blue: '#1BA6FA'
+    magenta: '#A578EA'
+    cyan: '#73FBF1'
+    white: '#FEFEF8'
+theme: Argonaut
 # Startup directory
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
