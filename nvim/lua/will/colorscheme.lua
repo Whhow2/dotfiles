@@ -35,8 +35,18 @@ require("catppuccin").setup({
 })
 --
 --[[ local colorscheme = "onedarker" ]]
-local colorscheme = "catppuccin"
+--[[ local colorscheme = "catppuccin" ]]
 --[[ local colorscheme = "tokyonight-night" ]]
+--[[ local colorscheme = "afterglow" ]]
+--[[ local colorscheme = "ayu" ]]
+--[[ local colorscheme = "angr" ]]
+--[[ local colorscheme = "nightfox" ]]
+--[[ local colorscheme = "noctis" ]]
+--[[ local colorscheme = "NeoSolarized" ]]
+--[[ local colorscheme = "sonokai" ]]
+--[[ local colorscheme = "aurora" ]]
+--[[ vim.g.aurora_transparent = 1 ]]
+local colorscheme = "mariana"
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 -- vim.cmd([[hi Normal guibg=NONE ctermbg=NONE]])
 if not status_ok then
