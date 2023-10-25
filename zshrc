@@ -6,6 +6,23 @@ fi
 
 neofetch
 
+export PYTHONPATH=/usr/bin/python3
+if [ -f ~/Library/Python/3.11/bin ]; then
+export PYTHONPATH=$(brew --prefix)/lib/python3.11/site-packages:$PYTHONPATH
+export PATH=$PATH:~/Library/Python/3.11/bin
+fi
+export PYENV_ROOT=$HOME/.pyenv
+eval "$(pyenv init - )"
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+export VIRTUALENVWRAPPER_VIRTUALENV=$(which virtualenv)
+export PYENV_VIRTUALWRAPPER_PREFER_PYENV="true"
+if [ ! -f /usr/bin/virtualenvwrapper.sh ]; then
+  source /usr/local/bin/virtualenvwrapper.sh
+else
+  source /usr/bin/virtualenvwrapper.sh
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -14,7 +31,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.config/emacs:$HOME/.emacs.d/bin:$HOME/.dotnet/tools:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.config/emacs:$HOME/.emacs.d/bin:$HOME/.dotnet/tools:$PATH:$HOME/.pyenv/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -122,21 +139,6 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PYTHONPATH=/usr/bin/python3
-if [ -f ~/Library/Python/3.11/bin ]; then
-export PYTHONPATH=$(brew --prefix)/lib/python3.11/site-packages:$PYTHONPATH
-export PATH=$PATH:~/Library/Python/3.11/bin
-fi
-eval "$(pyenv init - )"
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-export VIRTUALENVWRAPPER_VIRTUALENV=$(which virtualenv)
-export PYENV_VIRTUALWRAPPER_PREFER_PYENV="true"
-if [ ! -f /usr/bin/virtualenvwrapper.sh ]; then
-  source /usr/local/bin/virtualenvwrapper.sh
-else
-  source /usr/bin/virtualenvwrapper.sh
-fi
 
 #default to neovim
 #alias vim="nvim"
@@ -200,6 +202,7 @@ alias cdconf='cd ~/.config/'
 
 ## change to dev folder
 alias cddev='cd ~/dev'
+
 
 #fzf setup
 if type rg &> /dev/null; then
