@@ -203,6 +203,15 @@ alias cdconf='cd ~/.config/'
 ## change to dev folder
 alias cddev='cd ~/dev'
 
+## change to downloads folder
+alias cddown='cd ~/Downloads/'
+
+## change to documents folder
+alias cddoc='cd ~/Documents/'
+
+## update fedora packages
+alias fedup='sudo dnf update && sudo dnf upgrade'
+
 
 #fzf setup
 if type rg &> /dev/null; then

@@ -248,6 +248,6 @@ bindsym Mod1+Shift+2 exec --no-startup-id maim --window $(xdotool getactivewindo
 bindsym Mod1+Shift+3 exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 ## File Screenshots
-bindsym Mod1+Shift+4 exec --no-startup-id maim "/home/$USER/Pictures/Screenshot-$(date +%F)-$(date +%T)" 
-bindsym Mod1+Shift+5 exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
-bindsym Mod1+Shift+6 exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+bindsym Mod1+Shift+4 exec --no-startup-id maim "/home/$USER/Pictures/Screenshots/Screenshot-$(date +%F)-$(date +%T)" 
+bindsym Mod1+Shift+5 exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/Screenshot-$(date)"
+bindsym Mod1+Shift+6 exec --no-startup-id maim --select "/home/$USER/Pictures/Screenshots/Screenshot-$(date)"
