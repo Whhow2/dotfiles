@@ -22,14 +22,14 @@ keymap("i", "<C-z>", "<esc>:update<cr>a", opts)
 -- Quit without saving
 keymap("n", "zx", "<esc>:q!<cr>", opts)
 
-keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
-keymap("n", "<leader>fl", "<cmd>Telescope buffers<cr>", opts)
-keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
-keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
-keymap("n", "<leader>fb", "<cmd>Telescope file_browser<CR>", opts)
-keymap("n", "<leader>fd", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>", opts)
+keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>r", "<cmd>Telescope oldfiles<cr>", opts)
+keymap("n", "<leader>b", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>", opts)
+keymap("n", "<leader>tg", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>tc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+keymap("n", "<leader>tl", "<cmd>Telescope buffers<cr>", opts)
+keymap("n", "<leader>tp", "<cmd>Telescope project<cr>", opts)
+keymap("n", "<leader>tb", "<cmd>Telescope file_browser<CR>", opts)
 keymap("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
 
 -- Emmet

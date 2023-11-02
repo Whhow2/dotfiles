@@ -1,102 +1,112 @@
 {
-    "22010c5e-9e50-4614-97e1-959dbf38f3ca": {
-        "id": "22010c5e-9e50-4614-97e1-959dbf38f3ca",
+    "8bb30d59-f18a-4218-a42a-7c366ec8165c": {
+        "id": "8bb30d59-f18a-4218-a42a-7c366ec8165c",
         "name": "Google Search",
         "keyword": "g",
         "cmd": "https://google.com/search?q=%s",
         "icon": "/usr/share/ulauncher/media/google-search-icon.png",
         "is_default_search": true,
         "run_without_argument": false,
-        "added": 1680201260.5306532
+        "added": 1698809125.1700764
     },
-    "2a4892c3-6ba2-40dc-bde4-5ec4e35fb09a": {
-        "id": "2a4892c3-6ba2-40dc-bde4-5ec4e35fb09a",
+    "d47505cf-2a08-445a-b867-01c11c67c039": {
+        "id": "d47505cf-2a08-445a-b867-01c11c67c039",
         "name": "Stack Overflow",
         "keyword": "so",
         "cmd": "https://stackoverflow.com/search?q=%s",
         "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
         "is_default_search": true,
         "run_without_argument": false,
-        "added": 1680201260.5307648
+        "added": 1698809125.1701086
     },
-    "4f5d2038-078b-4327-8f45-6d08d3d9c66f": {
-        "id": "4f5d2038-078b-4327-8f45-6d08d3d9c66f",
+    "995529ba-4874-40f8-affc-93091b62726e": {
+        "id": "995529ba-4874-40f8-affc-93091b62726e",
         "name": "Wikipedia",
         "keyword": "wiki",
         "cmd": "https://en.wikipedia.org/wiki/%s",
         "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
         "is_default_search": true,
         "run_without_argument": false,
-        "added": 1680201260.5308633
+        "added": 1698809125.170135
     },
-    "5ec91981-ad96-4ed4-b278-f0ca84728596": {
-        "id": "5ec91981-ad96-4ed4-b278-f0ca84728596",
+    "365c3aef-fc6e-404c-9007-514ec1614191": {
+        "id": "365c3aef-fc6e-404c-9007-514ec1614191",
         "name": "WOL-E Search",
         "keyword": "we",
         "cmd": "https://wol.jw.org/en/wol/s/r1/lp-e?q=%s&st=&p=sen&r=occ",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": false,
-        "added": 1682971573.7612662
+        "added": 1698809263.9092796
     },
-    "3565044a-4811-4558-ac8c-639cfa49eff2": {
-        "id": "3565044a-4811-4558-ac8c-639cfa49eff2",
-        "name": "WOL-E Bible Search",
+    "712ad796-b65c-49d0-aa30-38faae0d3b7a": {
+        "id": "712ad796-b65c-49d0-aa30-38faae0d3b7a",
+        "name": "nwt-E",
         "keyword": "be",
         "cmd": "https://wol.jw.org/en/wol/l/r1/lp-e?q=%s",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": false,
-        "added": 1682971646.0023456
+        "added": 1698809289.5000882
     },
-    "2ec7b9a3-9ac6-4be4-b2b7-bda23bd5de6d": {
-        "id": "2ec7b9a3-9ac6-4be4-b2b7-bda23bd5de6d",
-        "name": "WOL-CR Bible Search",
+    "dc622e03-11c9-4f35-93b0-cb95a0597d0c": {
+        "id": "dc622e03-11c9-4f35-93b0-cb95a0597d0c",
+        "name": "nwt-cr",
         "keyword": "bcr",
         "cmd": "https://wol.jw.org/ht/wol/l/r60/lp-cr?q=%s",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": false,
-        "added": 1682971701.5146341
+        "added": 1698809317.9704618
     },
-    "1d129b87-6727-4c35-a1de-2c61ed261e79": {
-        "id": "1d129b87-6727-4c35-a1de-2c61ed261e79",
+    "2c4118c4-c864-4afb-a7f1-37c4875168c7": {
+        "id": "2c4118c4-c864-4afb-a7f1-37c4875168c7",
         "name": "WOL-CR Search",
         "keyword": "wcr",
         "cmd": "https://wol.jw.org/ht/wol/s/r60/lp-cr?q=%s&st=&p=sen&r=occ",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": false,
-        "added": 1682978230.5126517
+        "added": 1698809364.8126507
     },
-    "4cf5bb7b-bd5e-4844-ac2b-86712cc45cf7": {
-        "id": "4cf5bb7b-bd5e-4844-ac2b-86712cc45cf7",
+    "d6a685c2-43a4-42ae-a10e-ecbf28c8739b": {
+        "id": "d6a685c2-43a4-42ae-a10e-ecbf28c8739b",
         "name": "PPD",
         "keyword": "ppd",
         "cmd": "https://jwsite.sharepoint.com/sites/whq-wrt-ppd-translation/_layouts/15/search.aspx/siteall?q=%s",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": false,
-        "added": 1683092522.497709
+        "added": 1698809392.6247497
     },
-    "ab3f3647-9409-4074-a992-7c4c8193919b": {
-        "id": "ab3f3647-9409-4074-a992-7c4c8193919b",
+    "6c65a7be-0a44-416f-8737-3b23227b9a1a": {
+        "id": "6c65a7be-0a44-416f-8737-3b23227b9a1a",
         "name": "PPF",
         "keyword": "ppf",
-        "cmd": "https://ppf.bethel.jw.org/search.php?keywords=%s",
+        "cmd": "https://ppf.jw-services.org/search.php?keywords=%s",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": false,
-        "added": 1683092593.4548957
+        "added": 1698809525.5570908
     },
-    "74a5d114-9bc0-4e01-ae9f-cf1c3660e2c6": {
-        "id": "74a5d114-9bc0-4e01-ae9f-cf1c3660e2c6",
+    "f9b5ec38-e420-42a2-a1dd-b42fd51d46c5": {
+        "id": "f9b5ec38-e420-42a2-a1dd-b42fd51d46c5",
         "name": "jw.org Pictures",
         "keyword": "jwp",
         "cmd": "https://www.google.com/search?tbm=isch&q=site:jw.org+%s",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": false,
-        "added": 1684330379.8035321
+        "added": 1698809594.5843525
+    },
+    "2cedee0e-4f5c-4b0a-956e-9fd4d9968abb": {
+        "id": "2cedee0e-4f5c-4b0a-956e-9fd4d9968abb",
+        "name": "jw.org",
+        "keyword": "jw",
+        "cmd": "https://www.jw.org/en/search/?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1698809629.5045152
     }
 }

@@ -14,7 +14,7 @@ require("will.gitsigns")
 require("will.telescope")
 require("will.toggleterm")
 require("will.treesitter")
-require("will.nvim_tree")
+--[[ require("will.nvim_tree") ]]
 require("will.nvim-surround")
 require("will.indentline")
 require("will.alpha")

@@ -21,7 +21,8 @@ export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export VIRTUALENVWRAPPER_VIRTUALENV=$(which virtualenv)
 export PYENV_VIRTUALWRAPPER_PREFER_PYENV="true"
 if [ ! -f /usr/bin/virtualenvwrapper.sh ]; then
-  source /usr/local/bin/virtualenvwrapper.sh
+#  source /usr/local/bin/virtualenvwrapper.sh
+   source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 else
   source /usr/bin/virtualenvwrapper.sh
 fi
