@@ -214,6 +214,9 @@ alias cddoc='cd ~/Documents/'
 ## update fedora packages
 alias fedup='sudo dnf update && sudo dnf upgrade'
 
+## debian based update
+alias upg='sudo apt update && sudo apt upgrade'
+
 
 #fzf setup
 if type rg &> /dev/null; then
