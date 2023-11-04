@@ -152,10 +152,10 @@ export WX_CONFIG=/usr/local/x86_64/bin/wx-config
 
 #tmux
 ##general tmux session
-alias gen_tmux="tmux new-session -A -s main"
+alias general="tmux new-session -A -s main"
 
 ##development tmux session
-alias dev_tmux="tmux new-session -A -s dev"
+alias dev="tmux new-session -A -s dev"
 
 #browser-sync
 alias serve='browser-sync start --directory --server --files "*.js, *.html, *.css"'
