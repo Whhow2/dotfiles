@@ -15,7 +15,7 @@ require("will.telescope")
 require("will.toggleterm")
 require("will.treesitter")
 --[[ require("will.nvim_tree") ]]
-require("will.nvim-surround")
+--[[ require("will.nvim-surround") ]]
 require("will.indentline")
 require("will.alpha")
-require("leap").add_default_mappings()
+--[[ require("leap").add_default_mappings() ]]
