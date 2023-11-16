@@ -20,13 +20,11 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export VIRTUALENVWRAPPER_VIRTUALENV=$(which virtualenv)
 export PYENV_VIRTUALWRAPPER_PREFER_PYENV="true"
-if [ ! -f /usr/bin/virtualenvwrapper.sh ]; then
+[ -f /usr/bin/virtualenvwrapper.sh ] && source /usr/bin/virtualenvwrapper.sh
 #  source /usr/local/bin/virtualenvwrapper.sh
-   source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 #   source $HOME/.local/bin/virtualenvwrapper.sh
-else
-  source /usr/bin/virtualenvwrapper.sh
-fi
+[ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ] && source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+[ -f "$HOME/.local/bin/virtualenvwrapper.sh" ] && source "$HOME/.local/bin/virtualenvwrapper.sh"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
