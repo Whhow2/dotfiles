@@ -18,4 +18,5 @@ require("will.treesitter")
 --[[ require("will.nvim-surround") ]]
 require("will.indentline")
 require("will.alpha")
---[[ require("leap").add_default_mappings() ]]
+require("leap").add_default_mappings()
+require("notify")

@@ -36,3 +36,6 @@ end
 
 vim.opt.shortmess:append("c")
 vim.opt.iskeyword:append("-") -- includes dashes when changing word with ciw or diw
+
+-- set notify as default notify function
+vim.notify = require("notify")
