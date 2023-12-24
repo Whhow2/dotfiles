@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=UHK Agent
-Exec=/home/will/apps/UHK.Agent-3.2.1-linux-x86_64.AppImage
+Exec=~/apps/UHK.Agent-3.2.2-linux-x86_64.AppImage
 Terminal=false
 Type=Application
 Icon=/home/will/apps/icons/uhk-agent.png

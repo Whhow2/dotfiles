@@ -44,7 +44,6 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
-
 -- Better saving
 keymap("n", "zz", ":update<cr>", opts)
 -- save while in insert mode
@@ -52,7 +51,7 @@ keymap("i", "<C-z>", "<esc>:update<cr>a", opts)
 -- Quit without saving
 keymap("n", "zx", "<esc>:q!<cr>", opts)
 
-keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader><Space>", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>r", "<cmd>Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>b", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>", opts)
 keymap("n", "<leader>tg", "<cmd>Telescope live_grep<cr>", opts)
