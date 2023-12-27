@@ -19,4 +19,4 @@ require("will.treesitter")
 require("will.indentline")
 require("will.alpha")
 require("leap").add_default_mappings()
-require("notify")
+--[[ require("notify") ]]
