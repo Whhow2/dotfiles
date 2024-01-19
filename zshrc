@@ -209,6 +209,9 @@ alias cddown='cd ~/Downloads/'
 ## change to documents folder
 alias cddoc='cd ~/Documents/'
 
+## change to nvim config folder
+alias cdnvim='cd ~/dotfiles/nvim/'
+
 ## update fedora packages
 alias fedup='sudo dnf update && sudo dnf upgrade'
 
