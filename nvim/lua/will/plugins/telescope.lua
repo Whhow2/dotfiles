@@ -4,6 +4,13 @@ return {
 		tag = "0.1.5",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
+			require("telescope").setup({
+				extensions = {
+					file_browser = {
+						hijack_netrw = true,
+					},
+				},
+			})
 			vim.keymap.set("n", "<leader><Space>", "<cmd>Telescope find_files<cr>", opts)
 			vim.keymap.set("n", "<leader>r", "<cmd>Telescope oldfiles<cr>", opts)
 			vim.keymap.set("n", "<leader>tg", "<cmd>Telescope live_grep<cr>", opts)

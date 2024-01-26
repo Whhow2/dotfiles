@@ -218,6 +218,9 @@ alias fedup='sudo dnf update && sudo dnf upgrade'
 ## debian based update
 alias upg='sudo apt update && sudo apt upgrade'
 
+## pip3 to pip alias
+alias pip='pip3'
+
 
 #fzf setup
 if type rg &> /dev/null; then
