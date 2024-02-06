@@ -10,7 +10,6 @@
       <property name="&lt;Alt&gt;F3" type="empty">
         <property name="startup-notify" type="empty"/>
       </property>
-      <property name="XF86LogOff" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="empty"/>
@@ -28,6 +27,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="empty"/>
       <property name="&lt;Super&gt;r" type="empty">
+        <property name="startup-notify" type="empty"/>
         <property name="XF86Calendar" type="empty"/>
         <property name="XF86Memo" type="empty"/>
         <property name="XF86Terminal" type="empty"/>
@@ -37,8 +37,8 @@
         <property name="XF86AudioPrev" type="empty"/>
         <property name="XF86AudioNext" type="empty"/>
         <property name="XF86Calculator" type="empty"/>
-        <property name="startup-notify" type="empty"/>
       </property>
+      <property name="XF86LogOff" type="empty"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;s" type="empty"/>
     </property>
     <property name="custom" type="empty">
@@ -77,18 +77,19 @@
       <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
       <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
-      <property name="&lt;Super&gt;e" type="string" value="thunar"/>
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;exclam" type="string" value="sh -c &quot;maim | xclip -selection clipboard -t image/png&quot;"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;numbersign" type="string" value="sh -c &quot;maim --select | xclip -selection clipboard -t image/png&quot;"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;at" type="string" value="sh -c &quot;maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png&quot;"/>
-      <property name="&lt;Super&gt;f" type="string" value="firefox"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;dollar" type="string" value="sh -c &quot;maim &quot;/home/$USER/Pictures/Screenshots/Screenshot-$(date +%F)-$(date +%T)&quot; "/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;percent" type="string" value="sh -c &quot;maim --window $(xdotool getactivewindow) &quot;/home/$USER/Pictures/Screenshots/Screenshot-$(date)&quot;"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;asciicircum" type="string" value="sh -c &quot;maim --select &quot;/home/$USER/Pictures/Screenshots/Screenshot-$(date)&quot;"/>
       <property name="&lt;Super&gt;o" type="string" value="obsidian"/>
-      <property name="&lt;Super&gt;Return" type="string" value="alacritty"/>
+      <property name="&lt;Super&gt;Return" type="string" value="kitty"/>
+      <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
+      <property name="&lt;Super&gt;e" type="string" value="nautilus"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;c" type="string" value="/home/will/.local/bin/center_window.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -147,8 +148,8 @@
       <property name="&lt;Primary&gt;F12" type="empty"/>
       <property name="&lt;Super&gt;KP_Left" type="empty"/>
       <property name="&lt;Super&gt;KP_Right" type="empty"/>
-      <property name="&lt;Super&gt;KP_Down" type="empty"/>
       <property name="&lt;Super&gt;KP_Up" type="empty"/>
+      <property name="&lt;Super&gt;KP_Down" type="empty"/>
       <property name="&lt;Super&gt;KP_Page_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Home" type="empty"/>
       <property name="&lt;Super&gt;KP_End" type="empty"/>

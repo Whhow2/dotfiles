@@ -5,7 +5,8 @@ clear
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.config/emacs:$HOME/.emacs.d/bin:$HOME/.dotnet/tools:$PATH:$HOME/.pyenv/bin
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.config/emacs:$HOME/.emacs.d/bin:$HOME/.dotnet:$HOME/.dotnet/tools:$PATH:$HOME/.pyenv/bin
+export DOTNET_ROOT=$HOME/.dotnet/
 
 neofetch
 
