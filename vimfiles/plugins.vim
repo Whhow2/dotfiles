@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
