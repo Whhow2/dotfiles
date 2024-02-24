@@ -143,7 +143,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 #default to neovim
 #alias vim="nvim"
-alias vi="nvim"
+alias vi="vim"
 #alias oldvim="\vim"
 
 #wxWidgets
@@ -159,9 +159,6 @@ alias dev="tmux new-session -A -s dev"
 #browser-sync
 alias serve='browser-sync start --directory --server --files "*.js, *.html, *.css"'
 
-#open nvim config
-alias viconf="vi ~/.config/nvim/init.vim"
-
 #cd to nvim config
 alias cdnvim="cd ~/dotfiles/nvim/lua/will"
 
@@ -170,9 +167,6 @@ alias vizsh="vi ~/.zshrc && source ~/.zshrc"
 
 #source .zshrc config
 alias srczsh="source ~/.zshrc"
-
-#open alacritty.yml
-alias vialac="vi ~/.config/alacritty/alacritty.yml"
 
 #open kitty.conf
 alias vikit="vi ~/.config/kitty/kitty.conf"
@@ -185,12 +179,6 @@ alias vipbar="vi ~/.config/polybar/config.ini"
 
 #change to obsididian directory
 alias cdobs="cd ~/Documents/obsidian-main-vault"
-
-#git commit for obsidian-main-vault
-##arch-desktop
-alias gcad='git commit -m "arch-desktop"'
-alias gcmac='git commit -m "macbook"'
-alias gcavm='git commit -m "arch-mbp18-vmware"'
 
 ## change to dotfiles directory
 alias cddot='cd ~/dotfiles'
@@ -209,9 +197,6 @@ alias cddown='cd ~/Downloads/'
 
 ## change to documents folder
 alias cddoc='cd ~/Documents/'
-
-## change to nvim config folder
-alias cdnvim='cd ~/dotfiles/nvim/'
 
 ## update fedora packages
 alias fedup='sudo dnf update && sudo dnf upgrade'
