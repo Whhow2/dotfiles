@@ -55,22 +55,6 @@ set hlsearch
 "mouse setting
 set mouse=a
 
-"color settings
-set termguicolors
-set background=dark
-"colorscheme catppuccin_mocha
-colorscheme onedark
-hi Normal guibg=NONE ctermbg=NONE
-let g:terminal_ansi_colors = [
-    \ '#282828', '#cc241d', '#98971a', '#d79921',
-    \ '#458588', '#b16286', '#689d6a', '#a89984',
-    \ '#928374', '#fb4934', '#b8bb26', '#fabd2f',
-    \ '#83a598', '#d3869b', '#8ec07c', '#ebdbb2',
-\]
-
-"leader key set to space
-nnoremap <SPACE> <Nop>
-let mapleader=" "
-
-"status line
-set laststatus=2
+" splits
+set splitbelow
+set splitright
