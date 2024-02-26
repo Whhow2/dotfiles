@@ -1,11 +1,12 @@
 let g:ale_fixers = {
     \   'html': ['prettier'],
     \   'javascript': ['prettier', 'eslint'],
-    \   'python': ['black'],
+    \   'python': ['isort', 'yapf', 'remove_trailing_lines', 'trim_whitespace'],
     \}
 
 let g:ale_linters = {
     \   'javascript': ['eslint'],
+    \   'python': ['pylint'],
     \}
 
 let g:ale_linters_explicit = 1
