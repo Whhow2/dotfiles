@@ -1,0 +1,20 @@
+{
+  // "git.enableGutters": true,
+  "diagnostic.displayByAle": true,
+  "coc.preferences.formatOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.autoFixOnSave": true
+  "languageserver": {
+        "csharp-ls": {
+          "command": "csharp-ls",
+          "filetypes": ["cs"],
+          "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+        }
+    },
+  "powershell.integratedConsole.showOnStartup": false,
+}
