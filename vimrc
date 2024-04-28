@@ -22,6 +22,8 @@ Plug 'Yggdroot/indentLine'
 call plug#end()
 
 """ CORE SETTINGS """
+syntax off
+
 """ COLORSCHEME """
 if (empty($TMUX))
   if (has("nvim"))
