@@ -178,6 +178,7 @@ let g:ale_fix_on_save = 1
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_python_flake8_options = '--max-line-length 88 --extend-ignore=E203'
+let g:ale_lint_on_text_changed = 'never'
 
 """ TERMINAL """
 """ FLOATERM """
