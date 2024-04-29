@@ -19,6 +19,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 """ CORE SETTINGS """

@@ -161,7 +161,7 @@ alias dev="tmux new-session -A -s dev"
 alias serve='browser-sync start --directory --server --files "*.js, *.html, *.css"'
 
 # edit vim config
-alias vivim="vi ~/.vimrc"
+alias vivim="vi ~/dotfiles/vimrc"
 
 # cd to vimconfig
 alias cdvim="cd ~/vimfiles"
