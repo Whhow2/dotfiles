@@ -185,7 +185,7 @@ alias vi3="vi ~/.config/i3/config"
 alias vipbar="vi ~/.config/polybar/config.ini"
 
 #change to obsididian directory
-alias cdobs="cd ~/Documents/obsidian-main-vault"
+alias cdobs="cd ~/Documents/obsidian-vault"
 
 ## change to dotfiles directory
 alias cddot='cd ~/dotfiles'
